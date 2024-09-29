@@ -1,0 +1,30 @@
+.admin-sidebar {
+    width: 200px;
+    position: fixed;
+    top: 60px; /* Assuming navbar height */
+    left: 0;
+    background-color: #444;
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+  .admin-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .admin-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .admin-sidebar ul li a.active {
+    background-color: #555;
+  }
+  
