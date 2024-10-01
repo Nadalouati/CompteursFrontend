@@ -1,4 +1,4 @@
-import'../../../Styles/Admin/AdminSidebar.css';
+import '../../../Styles/Admin/AdminSidebar.css';
 import { NavLink } from 'react-router-dom';
 
 const AdminSidebar = () => {
@@ -6,12 +6,12 @@ const AdminSidebar = () => {
     <aside className="admin-sidebar">
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active">
+          <NavLink to="/admin/acc" activeClassName="active">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/reclamation" activeClassName="active">
+          <NavLink to="/admin/reclamation" activeClassName="active">
             Reclamation
           </NavLink>
         </li>

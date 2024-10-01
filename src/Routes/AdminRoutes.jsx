@@ -8,11 +8,14 @@ import PrivateRoute from './PrivateRoute';
 const AdminRoutes = () => {
   return (
     <Routes>
+      {/* Route for login */}
+      <Route path="/" element={<AdminLogin />} />
+      
+      {/* Protected routes */}
       <Route element={<PrivateRoute />}>
         <Route element={<AdminLayout />}>
-          <Route path="/" element={<AdminLogin />} />
-          <Route path="/admin-accueil" element={<AdminAccueil />} />
-          <Route path="/reclamation" element={<Reclamation/>} />
+          <Route path="/acc" element={<AdminAccueil />} />
+          <Route path="/reclamation" element={<Reclamation />} />
         </Route>
       </Route>
     </Routes>
