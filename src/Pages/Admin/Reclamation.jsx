@@ -1,6 +1,6 @@
 
 import'../../Styles/Admin/AdminAccueil.css';
-const AdminAccueil = () => {
+const Reclamation = () => {
   return (
     <div className="admin-accueil">
       <h2>Bienvenue sur reclamation</h2>
@@ -9,4 +9,4 @@ const AdminAccueil = () => {
   );
 };
 
-export default AdminAccueil;
+export default Reclamation;
