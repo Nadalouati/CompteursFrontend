@@ -15,7 +15,7 @@ const AdminSidebar = () => {
             Reclamation
           </NavLink>
         </li>
-        {/* Add more links here */}
+        
       </ul>
     </aside>
   );
