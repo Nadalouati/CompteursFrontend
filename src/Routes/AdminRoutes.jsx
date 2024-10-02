@@ -14,7 +14,7 @@ const AdminRoutes = () => {
       {/* Protected routes */}
       <Route element={<PrivateRoute />}>
         <Route element={<AdminLayout />}>
-          <Route path="/acc" element={<AdminAccueil />} />
+          <Route path="/accueil" element={<AdminAccueil />} />
           <Route path="/reclamation" element={<Reclamation />} />
         </Route>
       </Route>
