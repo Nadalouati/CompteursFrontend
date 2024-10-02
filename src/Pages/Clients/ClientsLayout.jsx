@@ -1,6 +1,6 @@
+import '../../Styles/Clients/ClientsLayout.css'; // Importation du fichier CSS
 import { Outlet } from 'react-router-dom';
 import ClientsNavbar from './Components/ClientsNavbar';
- 
 
 const ClientsLayout = () => {
   return (

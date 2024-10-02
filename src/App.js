@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/admin/*" element={<AdminRoutes />} />
-          <Route path="/client/*" element={<ClientsRoutes />} />
+          <Route path="/*" element={<ClientsRoutes />} />
         </Routes>
       </Router>
     </div>

@@ -1,0 +1,21 @@
+.clients-layout {
+    background-image: url('../../Assets/Image2.jpg'); /* Chemin vers l'image */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    min-height: 100vh; /* Pour que la page prenne toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .clients-page-content {
+    flex-grow: 1;
+    padding: 20px;
+   
+   
+    border-radius: 8px; /* Arrondit légèrement les coins */
+   
+    margin: 20px;
+  }
+  
+  

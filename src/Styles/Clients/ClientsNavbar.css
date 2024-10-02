@@ -1,10 +1,101 @@
 .clients-navbar {
-    background-color: #003366;
-    color: white;
+  background-color: white;
+  color: rgb(224, 28, 28);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre noire */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-left {
+  height: 60px; /* Agrandir la taille */
+  width: auto;
+  transform: translateX(10mm); /* Déplacer vers la droite de 1 cm */
+}
+
+.logo-right {
+  height: 50px; /* Taille standard pour le logo de droite */
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustements pour la version responsive */
+@media (max-width: 768px) {
+  .clients-navbar {
     padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    justify-content: space-between;
   }
-  
+
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-left, .logo-right {
+    height: 50px; /* Réduire la taille sur des écrans plus petits */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links a {
+    font-size: 16px; /* Légèrement plus petit sur mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-navbar {
+    padding: 8px;
+  }
+
+  .navbar-links a {
+    font-size: 14px; /* Réduction supplémentaire de la taille de la police sur petits écrans */
+  }
+
+  .logo-left, .logo-right {
+    height: 40px; /* Logo plus petit pour les très petits écrans */
+  }
+}
