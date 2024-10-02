@@ -8,7 +8,7 @@
   
   .autres-container h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increased space under the title */
   }
   
   /* Products container - responsive grid layout */
@@ -17,6 +17,21 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-bottom: 30px;
+  }
+  
+  /* Product group styling for top and bottom sections */
+  .top-products {
+    grid-column: span 2; /* Span across 2 columns */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add space between the two products */
+  }
+  
+  .bottom-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
   
   /* Each product card styling */
@@ -28,6 +43,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px; /* Added space below each product card */
   }
   
   .product-card:hover {

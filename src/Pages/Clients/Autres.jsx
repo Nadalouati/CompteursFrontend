@@ -11,7 +11,8 @@ const Autres = () => {
     <div className="autres-container">
       <h2>Bienvenue chez 1 Gabonais 1 compteur vous souhaitez avoir :</h2>
 
-      <div className="products-container">
+      {/* Top product cards - Monophasé and Triphasé */}
+      <div className="top-products">
         <div className="product-card">
           <input type="checkbox" className="checkbox" />
           <img src={compteurMonophase} alt="Compteur Monophasé" />
@@ -41,10 +42,12 @@ const Autres = () => {
             </div>
           </div>
         </div>
+      </div>
 
+      {/* Bottom product cards */}
+      <div className="bottom-products">
         <div className="product-card">
           <input type="checkbox" className="checkbox" />
-         
           <img src={Disjoncteurs} alt="Disjoncteurs" />
           <h3>Disjoncteurs</h3>
           <p>35 000 FCFA</p>
@@ -60,7 +63,6 @@ const Autres = () => {
 
         <div className="product-card">
           <input type="checkbox" className="checkbox" />
-          
           <img src={clavier} alt="clavier" />
           <h3>Claviers (CUI)</h3>
           <p>45 000 FCFA</p>
@@ -76,7 +78,6 @@ const Autres = () => {
 
         <div className="product-card">
           <input type="checkbox" className="checkbox" />
-          
           <img src={collier} alt="collier" />
           <h3>Colliers</h3>
           <p>15 000 FCFA</p>
