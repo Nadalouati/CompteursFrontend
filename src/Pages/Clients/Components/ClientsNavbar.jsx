@@ -22,6 +22,10 @@ const ClientsNavbar = () => {
           <li>
             <Link to="/contact">CONTACT</Link>
           </li>
+          {/* Add the "Créer un compte" button */}
+          <li className="create-account">
+            <Link to="/signup" className="create-account-link">Créer un compte</Link>
+          </li>
         </ul>
 
         <img src={seegLogo} alt="SEEG Logo" className="logo-right" />

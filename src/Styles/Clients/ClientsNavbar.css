@@ -18,22 +18,25 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1200px; /* Optional: limits the width to a specific max value */
 }
 
 .logo-left {
   height: 60px; /* Agrandir la taille */
   width: auto;
-  transform: translateX(10mm); /* Déplacer vers la droite de 1 cm */
+  margin-right: 20px; /* Add margin to create space between logo and links */
 }
 
 .logo-right {
   height: 50px; /* Taille standard pour le logo de droite */
   width: auto;
+  margin-left: 20px;
 }
 
 .navbar-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 1;
   list-style: none;
   padding: 0;
@@ -48,13 +51,41 @@
   color: black;
   text-decoration: none;
   font-size: 18px;
+  line-height: 60px; /* Ensure the links are vertically centered */
 }
 
 .navbar-links a:hover {
   text-decoration: underline;
 }
 
-/* Ajustements pour la version responsive */
+/* "Créer un compte" button styling */
+.create-account-link {
+  display: inline-block;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  border: 2px solid green;
+  border-radius: 25px;
+  color: green;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.create-account-link:hover {
+  background-color: rgb(70, 86, 70);
+  color: white;
+}
+
+.navbar-links .create-account {
+  margin-left: 20px;
+  
+  line-height: 60px; /* Ensure the button is vertically aligned with the other links */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .clients-navbar {
     padding: 10px;

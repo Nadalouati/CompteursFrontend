@@ -5,6 +5,7 @@ import Presentation from '../Pages/Clients/Presentation';
 import Contact from '../Pages/Clients/Contact';
 import PrivateRoute from './PrivateRoute';
 import Autres from '../Pages/Clients/Autres';
+import SignUp from '../Pages/Clients/SignUp';
 
 const ClientsRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const ClientsRoutes = () => {
           <Route path="/presentation" element={<Presentation />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/autres" element={<Autres/>} />
+          <Route path="/signup" element={ <SignUp/>}  />
         </Route>
       </Route>
     </Routes>
