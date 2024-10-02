@@ -8,7 +8,8 @@
   
   .autres-container h2 {
     font-size: 24px;
-    margin-bottom: 40px; /* Increased space under the title */
+    margin-top: 80px; /* Augmenter la marge supérieure */
+    margin-bottom: 40px; /* Augmenter l'espace sous le titre si besoin */
   }
   
   /* Products container - responsive grid layout */
@@ -21,16 +22,19 @@
   
   /* Product group styling for top and bottom sections */
   .top-products {
-    grid-column: span 2; /* Span across 2 columns */
+    grid-column: span 2;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add space between the two products */
+    gap: 20px; 
+  }
+  
+  .top-products .product-card {
+    flex: 0 0 45%; /* Réduit la largeur des cartes du haut à 45% */
   }
   
   .bottom-products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Diminue la largeur des autres cartes */
     gap: 20px;
   }
   
@@ -43,7 +47,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 30px; /* Added space below each product card */
+    margin-bottom: 30px;
   }
   
   .product-card:hover {
@@ -65,39 +69,6 @@
     margin-bottom: 15px;
   }
   
-  .quantity-selector {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .quantity-selector label {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  .quantity-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .quantity-buttons button {
-    width: 30px;
-    height: 30px;
-    background-color: #e0e0e0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .quantity-buttons input {
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 0 10px;
-  }
-  
   /* Buy button styling */
   .buy-button {
     padding: 12px 20px;
@@ -115,7 +86,11 @@
   }
   
   @media (max-width: 768px) {
-    .products-container {
+    .top-products .product-card {
+      flex: 0 0 100%; /* Occupe 100% de la largeur sur petit écran */
+    }
+  
+    .bottom-products {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
   
